@@ -22,20 +22,6 @@
     "outDir": "./build",
     "rootDir": "./src",
     "baseUrl": ".",
-    "paths": {
-      "@assets/*": [
-        "./src/assets/*"
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@styles/styles/*": [
-        "./src/styles/*"
-      ],
-      "@layout/*": [
-        "./src/layout/*"
-      ]
-    },
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
