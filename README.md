@@ -26,6 +26,7 @@ npm install dotenv && npm install --save-dev @types/dotenv
 .env
 ~~~env
 SKIP_PREFLIGHT_CHECK = true
+API_URL = url-api
 ~~~
 
 
@@ -196,4 +197,16 @@ module.exports = {
   },
 };
 
+~~~
+#### Script Start Deploy
+~~~bash
+yarn add serve
+~~~
+~~~json
+  "scripts": {
+    "start": "node ./node_modules/serve/bin/serve.js -s build",
+    "dev": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js"
+  }
 ~~~
